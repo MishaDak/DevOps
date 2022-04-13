@@ -45,5 +45,5 @@ func ReadTextFromFile(w http.ResponseWriter, r *http.Request) {
 func main() {
 	fmt.Printf("Server started")
 	http.HandleFunc("/", ReadTextFromFile)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8081", nil))
 }
